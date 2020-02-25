@@ -8,5 +8,9 @@ public class Main {
 		a.taste();
 		a.miam();
 
+		PineApple pen = new PineApple();
+		pen.taste();
+		pen.miam();
+
 	}
 }
