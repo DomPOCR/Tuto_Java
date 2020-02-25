@@ -14,7 +14,7 @@ public class Player {
 
 	public void damage(double damage) {
 		this.health -= damage;
-		System.out.println(name + " vient de subir " + damage);
+		System.out.println(name + " vient de subir " + damage + " dégats ");
 	}
 
 	public String getName() {
