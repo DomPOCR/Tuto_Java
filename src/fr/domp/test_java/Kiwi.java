@@ -1,15 +1,16 @@
 package fr.domp.test_java;
 
-public class Apple extends Fruit implements PeelFruit {
+public class Kiwi extends Fruit implements PeelFruit {
 
-	public Apple() {
-		super("pomme");
+	public Kiwi(String myname) {
+		super("kiwi");
 
 	}
 
 	@Override
 	public void taste() {
-		System.out.println("La pomme a un goût plutôt sucré");
+		System.out.println("Le goût est plutôt sucré miam miam");
+
 	}
 
 	@Override
@@ -21,19 +22,19 @@ public class Apple extends Fruit implements PeelFruit {
 	@Override
 	public boolean hasSeed() {
 
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isPeeled() {
-
-		return false;
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 	@Override
 	public String getSkinType() {
 
-		return "lisse";
+		return "doux";
 	}
 
 }

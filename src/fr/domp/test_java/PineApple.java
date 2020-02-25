@@ -1,10 +1,12 @@
 package fr.domp.test_java;
 
-public class PineApple extends Fruit {
+public class PineApple extends Fruit implements PeelFruit {
+
+	private boolean peeled = false;
 
 	public PineApple() {
 		super("Ananas");
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override
@@ -15,14 +17,26 @@ public class PineApple extends Fruit {
 
 	@Override
 	public int getSize() {
-		// TODO Auto-generated method stub
+
 		return 2;
 	}
 
 	@Override
 	public boolean hasSeed() {
-		// TODO Auto-generated method stub
+
 		return false;
+	}
+
+	@Override
+	public boolean isPeeled() {
+
+		return peeled;
+	}
+
+	@Override
+	public String getSkinType() {
+
+		return "piquante";
 	}
 
 }

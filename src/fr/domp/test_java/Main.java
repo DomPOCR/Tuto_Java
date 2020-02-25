@@ -12,5 +12,9 @@ public class Main {
 		pen.taste();
 		pen.miam();
 
+		if (!(a instanceof PeelFruit)) {
+			System.out.println("ce fruit n'implémente pas l'interface PeelFruit");
+		}
+
 	}
 }
