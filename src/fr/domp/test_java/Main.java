@@ -1,20 +1,17 @@
 package fr.domp.test_java;
 
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
 
-		Player player1 = new Player("Aldo", 20.0, 300.0);
-		System.out.println("Nom : " + player1.getName());
-		player1.setAttack(30.0);
-		System.out.println("Vie : " + player1.getHealth());
+		ArrayList<String> list = new ArrayList<>();
+		list.add("text1");
+		list.add("text2");
+		list.add("text3");
 
-		Player player2 = new Player("Lili", 30.0, 400.0);
-
-		player2.setName("Cooky");
-		player2.damage(player1.getAttack());
-		System.out.println("Nom : " + player2.getName());
-		System.out.println("Vie : " + player2.getHealth());
-
+		System.out.println(list);
+		System.out.println(list.size());
 	}
 }
