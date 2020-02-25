@@ -2,6 +2,11 @@ package fr.domp.test_java;
 
 public class Apple extends Fruit {
 
+	public Apple() {
+		super("pomme");
+
+	}
+
 	@Override
 	public void taste() {
 		System.out.println("La pomme a un goût plutôt sucré");

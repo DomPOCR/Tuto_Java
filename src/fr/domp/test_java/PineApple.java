@@ -2,6 +2,11 @@ package fr.domp.test_java;
 
 public class PineApple extends Fruit {
 
+	public PineApple() {
+		super("Ananas");
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void taste() {
 		System.out.println("L'ananas a un goût plutôt acide");
