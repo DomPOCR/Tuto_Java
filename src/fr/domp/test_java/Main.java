@@ -2,6 +2,7 @@ package fr.domp.test_java;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class Main {
 
@@ -17,17 +18,13 @@ public class Main {
 
 		System.out.println(ages.toString());
 
-		System.out.println(ages.get("Cooky"));
+		int moyenne = 0;
 
-		ages.remove("Mimi");
-
-		if (ages.containsKey("Mimi")) {
-			System.out.println("La clef existe");
-		} else {
-			System.out.println("La clef n'existe pas");
+		for (Entry<String, Integer> element : ages.entrySet()) {
+			System.out.println("La clef est : " + element.getKey() + " , son age est : " + element.getValue());
+			moyenne += element.getValue();
 		}
 
-		System.out.println(ages.toString());
-
+		System.out.println("Age moyen : " + moyenne / ages.size());
 	}
 }
